@@ -36,7 +36,7 @@ function render() {
           <p class="text-sm text-gray-500">${job.location} • ${job.type} • ${job.salary}</p>
           <p class="mt-2 text-sm">${job.description}</p>
         </div>
-        <button class="text-red-500" onclick="deleteJob(${job.id})">✕</button>
+        <button class="text-red-500" onclick="deleteJob(${job.id})"><i class="delete-icon">trash</i></button>
       </div>
       <div class="flex gap-3 mt-4">
         <button onclick="setStatus(${job.id}, 'interview')" class="px-3 py-1 rounded border ${job.status==='interview'?'bg-green-500 text-white':''}">Interview</button>
