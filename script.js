@@ -42,7 +42,7 @@ function render() {
         <button onclick="setStatus(${job.id}, 'interview')" class="px-3 py-1 rounded border ${job.status==='interview'?'bg-green-500 text-white':''}">Interview</button>
         <button onclick="setStatus(${job.id}, 'rejected')" class="px-3 py-1 rounded border ${job.status==='rejected'?'bg-red-500 text-white':''}">Rejected</button>
       </div>
-    `;
+           `;
     list.appendChild(card);
   });
 
